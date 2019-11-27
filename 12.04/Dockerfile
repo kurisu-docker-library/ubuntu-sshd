@@ -6,8 +6,6 @@ RUN apt-get  \
     && apt-get clean  \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN apt-get install -y openssh-server
-
 RUN mkdir /var/run/sshd \
     && RUN mkdir /root/.ssh \
     && echo 'root:root' |chpasswd
