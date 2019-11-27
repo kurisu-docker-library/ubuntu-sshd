@@ -15,7 +15,7 @@ RUN mkdir /var/run/sshd \
 RUN sed -ri 's/^#?PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config \
     && sed -ri 's/^#?RSAAuthentication yes/RSAAuthentication yes/g' /etc/ssh/sshd_config \
     && sed -ri 's/^#?PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config \
-    && sed -ri 's/^#?PasswordAuthentication yes/PasswordAuthentication yes/g' /etc/ssh/sshd_config \
+    && sed -ri 's/^#?PasswordAuthentication yes/PasswordAuthentication yes/g' /etc/ssh/sshd_config
 
 EXPOSE 22
 
